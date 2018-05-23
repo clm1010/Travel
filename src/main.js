@@ -4,9 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastclick from 'fastclick'
+import MuseUI from 'muse-ui'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 
+import 'muse-ui/dist/muse-ui.css'
+import 'muse-ui/dist/theme-light.css'
+
+Vue.use(MuseUI)
 Vue.config.productionTip = false
 fastclick.attach(document.body)
 /* eslint-disable no-new */
