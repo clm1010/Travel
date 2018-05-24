@@ -8,9 +8,10 @@ import MuseUI from 'muse-ui'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
-import 'swiper/dist/css/swiper.min.css'
 import 'muse-ui/dist/muse-ui.css'
 import 'muse-ui/dist/theme-light.css'
+import 'swiper/dist/css/swiper.min.css'
+import './assets/styles/material-icons.css'
 
 Vue.use(MuseUI)
 Vue.config.productionTip = false

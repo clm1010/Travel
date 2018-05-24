@@ -8,26 +8,27 @@
   </mu-raised-button>
 </mu-grid-list> -->
 <div>
-  <!-- <mu-flexbox class="mt8">
-    <mu-flexbox-item class="flex-demo" v-for="(tile,index) in list" :key="index" wrap>
-      <mu-flat-button label="Default" class="demo-flat-button">
-        <img :src="tile.image" :alt="tile.title" style="display:block;" />
-        <p style="display:block;width:100%">1</p>
+  <mu-flexbox>
+    <mu-flexbox-item class="flex-demo" v-for="(tile,index) in list" :key="index">
+      <mu-flat-button  class="demo-flat-button">
+        <img :src="tile.image" :alt="tile.title"/>
+        <p>1</p>
       </mu-flat-button>
     </mu-flexbox-item>
-  </mu-flexbox> -->
-  <mu-row gutter>
+  </mu-flexbox>
+  <!-- <mu-row gutter>
     <mu-col style="text-align:center" width="50" tablet="50" v-for="(tile,index) in list" :key="index">
         <mu-flat-button class="demo-flat-button">
           <img :src="tile.image" :alt="tile.title" style="display:block"/>
         </mu-flat-button>
     </mu-col>
-  </mu-row>
+  </mu-row> -->
 </div>
 </template>
 
 <script>
 export default {
+  name: 'HomePanel',
   data () {
     return {
       list: [{

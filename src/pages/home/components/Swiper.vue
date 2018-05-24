@@ -37,12 +37,13 @@ export default {
 <style lang="stylus" scoped>
 /* .wrapper >>> .swiper-pagination-bullet-active
   background: red !important */
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction
+  bottom:0.2rem
 .wrapper
   overflow:hidden
   width:100%
-  height:0
-  padding-bottom:40%
+  min-height:150px
   .swiper-img
     width: 100%
-    min-height:150px;
+    min-height:150px
 </style>
