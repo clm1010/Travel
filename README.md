@@ -1,21 +1,22 @@
-# my-travel
+# 旅游
 
-> A Vue.js project
+> 一个Vue.js项目
 
-## Build Setup
+## 构建设置
 
-``` bash
-# install dependencies
+``` 使用cmd或bash命令
+# 安装依赖关系
 npm install
 
-# serve with hot reload at localhost:8080
+# 在localhost：8082进行热重新加载
 npm run dev
 
-# build for production with minification
+# 打包压缩建立生产
 npm run build
 
-# build for production and view the bundle analyzer report
+# 建立生产和查看捆绑分析器报告
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+有关如何工作的详细说明，请查看
+[guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
