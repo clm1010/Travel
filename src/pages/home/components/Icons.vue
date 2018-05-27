@@ -87,7 +87,7 @@ export default {
   @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 60%;
   .icons >>> .swiper-pagination-bullet-active
     background-color: $bgColor;
   .icon
