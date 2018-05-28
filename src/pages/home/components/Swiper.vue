@@ -19,19 +19,19 @@ export default {
         autoplay: 3000
       },
       swiperList: [{
-        id: '01',
+        id: '0001',
         imgUrl: require('@/assets/img/banner-01.jpg')
       }, {
-        id: '02',
+        id: '0002',
         imgUrl: require('@/assets/img/banner-02.jpg')
       }, {
-        id: '03',
+        id: '0003',
         imgUrl: require('@/assets/img/banner-03.jpg')
       }, {
-        id: '04',
+        id: '0004',
         imgUrl: require('@/assets/img/banner-04.jpg')
       }, {
-        id: '05',
+        id: '0005',
         imgUrl: require('@/assets/img/banner-05.jpg')
       }]
     }

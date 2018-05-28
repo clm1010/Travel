@@ -25,43 +25,43 @@ export default {
         autoplay: 5000
       },
       iconList: [{
-        id: '001',
+        id: '0001',
         imgUrl: require('@/assets/img/icon-01.png'),
         desc: '景点门票'
       }, {
-        id: '002',
+        id: '0002',
         imgUrl: require('@/assets/img/icon-02.png'),
         desc: '必游榜单'
       }, {
-        id: '003',
+        id: '0003',
         imgUrl: require('@/assets/img/icon-03.png'),
         desc: '踏青赏花'
       }, {
-        id: '004',
+        id: '0004',
         imgUrl: require('@/assets/img/icon-04.png'),
         desc: '一日游'
       }, {
-        id: '005',
+        id: '0005',
         imgUrl: require('@/assets/img/icon-05.png'),
         desc: '动植物园'
       }, {
-        id: '006',
+        id: '0006',
         imgUrl: require('@/assets/img/icon-06.png'),
         desc: '故宫'
       }, {
-        id: '007',
+        id: '0007',
         imgUrl: require('@/assets/img/icon-07.png'),
         desc: '古北水镇'
       }, {
-        id: '008',
+        id: '0008',
         imgUrl: require('@/assets/img/icon-08.png'),
         desc: 'Q+精选'
       }, {
-        id: '009',
+        id: '0009',
         imgUrl: require('@/assets/img/icon-09.png'),
         desc: '演出'
       }, {
-        id: '010',
+        id: '0010',
         imgUrl: require('@/assets/img/icon-10.png'),
         desc: '自然风光'
       }]
@@ -92,7 +92,7 @@ export default {
   .icons >>> .swiper-pagination-bullet-active
     background-color: $bgColor;
   .icons
-    margin-top:.2rem;
+    margin-top:.1rem;
     .icon
       position: relative;
       overflow: hidden;
