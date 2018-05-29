@@ -55,7 +55,6 @@ export default {
   @import '~styles/varibles.styl'
   @import '~styles/mixins.styl'
   .weekend-title
-    margin-top: .2rem;
     line-height: .8rem;
     background-color: #EEE;
     text-indent: .2rem;
