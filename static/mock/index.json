@@ -4,105 +4,124 @@
     "city": "北京",
     "swiperList": [{
       "id": "0001",
-      "imgUrl": "require('@/assets/img/banner-01.jpg')"
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1805/77/f63bd04dd5319602.jpg_750x200_6ba8e0ca.jpg"
     }, {
       "id": "0002",
-      "imgUrl": "require('@/assets/img/banner-02.jpg')"
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/1b/6c766b79e2045102.jpg_750x200_29ad1225.jpg"
     }, {
       "id": "0003",
-      "imgUrl": "require('@/assets/img/banner-03.jpg')"
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/5c/969bfa7af00a2702.jpg_750x200_b99b8e07.jpg"
     }, {
       "id": "0004",
-      "imgUrl": "require('@/assets/img/banner-04.jpg')"
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/e5/82b53c47166cfc02.jpg_750x200_0d3a0066.jpg"
     }, {
       "id": "0005",
-      "imgUrl": "require('@/assets/img/banner-05.jpg')"
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1805/3b/ef86879aa50e3002.jpg_750x200_2a108508.jpg"
+    }, {
+      "id": "0006",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1805/b6/2330c92270c7e802.jpg_750x200_425e2121.jpg"
     }],
     "iconList": [{
       "id": "0001",
-      "imgUrl": "require('@/assets/img/icon-01.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
       "desc": "景点门票"
     }, {
       "id": "0002",
-      "imgUrl": "require('@/assets/img/icon-02.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
       "desc": "必游榜单"
     }, {
       "id": "0003",
-      "imgUrl": "require('@/assets/img/icon-03.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
       "desc": "踏青赏花"
     }, {
       "id": "0004",
-      "imgUrl": "require('@/assets/img/icon-04.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
       "desc": "一日游"
     }, {
       "id": "0005",
-      "imgUrl": "require('@/assets/img/icon-05.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
       "desc": "动植物园"
     }, {
       "id": "0006",
-      "imgUrl": "require('@/assets/img/icon-06.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png",
       "desc": "故宫"
     }, {
       "id": "0007",
-      "imgUrl": "require('@/assets/img/icon-07.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png",
       "desc": "古北水镇"
     }, {
       "id": "0008",
-      "imgUrl": "require('@/assets/img/icon-08.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png",
       "desc": "Q+精选"
     }, {
       "id": "0009",
-      "imgUrl": "require('@/assets/img/icon-09.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/e3/67df61427c8e1302.png",
       "desc": "演出"
     }, {
       "id": "0010",
-      "imgUrl": "require('@/assets/img/icon-10.png')",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
       "desc": "自然风光"
+    }, {
+      "id": "0011",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+      "desc": "名胜古迹"
+    }, {
+      "id": "0012",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/dd/cce1231836f10a02.png",
+      "desc": "周边游"
+    }, {
+      "id": "0013",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/b6/37560ece9c62b502.png",
+      "desc": "城市观光"
+    }, {
+      "id": "0014",
+      "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+      "desc": "游乐场"
     }],
     "recommendList": [{
       "id": "0001",
-      "imgUrl": "require('@/assets/img/rec-01.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_200x200_7690e4cd.jpg",
       "title": "北京欢乐谷",
       "desc": "这里是学生党名副其实的开心课堂，这里同样是青年情侣的浪漫圣地！时尚、动感、欢乐、梦幻的北京欢乐谷欢迎你！"
     }, {
       "id": "0002",
-      "imgUrl": "require('@/assets/img/rec-02.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1704/d6/d62a708bc69472f5a3.img.jpg_150x150_54ba6c62.jpg",
       "title": "十渡聚龙湾玻璃栈道",
       "desc": "聚龙湾—奏响4A创想曲！聚龙湾景区位于北方小桂林房山区十渡镇。优越的地理位置、宜人的生态景观、便利的交通环境和完善的配套梦寻生态山水，情归大美聚龙。聚龙湾—奏响4A创想曲！聚龙湾景区位于北方小桂林房山区十渡镇。优越的地理位置、宜人的生态景观、便利的交通环境和完善的配套设施是聚龙湾景区的强势特色。景区内设大型停车场，打破了十渡观光游览停车难的窘迫局面。优雅的环境，匠心的设计，超凡的体验，使聚龙湾成为了十渡观光休闲的不二之选。景区内设高山全景漂流。其独特之处在于巧妙的利用了自然风光，并增添了潮流的浪漫与刺激元素。该项目全长1600米。其惊险与刺激程度保准让您眼界大开，流连忘返。为揭开龙山的神秘面纱，聚龙湾景区别出心裁，打造了独特的玻璃台阶栈道。行走在奇特的台阶栈道上，您可以望峭壁之上自然形成的佛字，还可以俯瞰十渡美景于心田，感受不一样的栈道体验。设施是聚龙湾景区的强势特色。景区内设大型停车场，打破了十渡观光游览停车难的窘迫局面。优雅的环境，匠心的设计，超凡的体验，使聚龙湾成为了十渡观光休闲的不二之选。景区内设高山全景漂流。其独特之处在于巧妙的利用了自然风光，并增添了潮流的浪漫与刺激元素。该项目全长1600米，是十渡的高山全景丛林漂流。其惊险与刺激程度保准让您眼界大开，流连忘返。为揭开龙山的神秘面纱。"
     }, {
       "id": "0003",
-      "imgUrl": "require('@/assets/img/rec-03.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg",
       "title": "故宫",
       "desc": "还记得影视剧中，皇帝上朝的金銮殿嘛？金銮殿名为太和殿，是皇帝登基和举行大典的地方。"
     }, {
       "id": "0004",
-      "imgUrl": "require('@/assets/img/rec-04.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg",
       "title": "古北水镇",
       "desc": "“永顺染，草木色，手工缬，天然彩”。观赏原汁原味的生态印染。老师手把手教你DIY属于自己的印染作品。"
     }],
     "weekendList": [{
       "id": "0001",
-      "imgUrl": "require('@/assets/img/week-01.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg",
       "title": "北京赏花好地方",
       "desc": "乱花渐欲迷人眼，京城赏花大搜索"
     }, {
       "id": "0002",
-      "imgUrl": "require('@/assets/img/week-02.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
       "title": "北京必游TOP10",
       "desc": "来北京必去的景点非这些地方莫属"
     }, {
       "id": "0003",
-      "imgUrl": "require('@/assets/img/week-03.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
       "title": "寻找北京的皇城范儿",
       "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
     }, {
       "id": "0004",
-      "imgUrl": "require('@/assets/img/week-04.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
       "title": "学生最爱的博物馆",
       "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
     }, {
       "id": "0005",
-      "imgUrl": "require('@/assets/img/week-05.jpg')",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
       "title": "儿童剧场，孩子的乐园",
       "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
     }]

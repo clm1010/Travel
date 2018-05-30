@@ -1,10 +1,11 @@
 <template>
 <div>
-  <home-header></home-header>
-  <home-swiper></home-swiper>
-  <home-icons></home-icons>
-  <home-recommend></home-recommend>
-  <home-weekend></home-weekend>
+  <!-- 父组件给子组件传值通过属性方式 -->
+  <home-header :city="city"></home-header>
+  <home-swiper :swiperList="swiperList"></home-swiper>
+  <home-icons :iconList="iconList"></home-icons>
+  <home-recommend :recommendList="recommendList"></home-recommend>
+  <home-weekend :weekendList="weekendList"></home-weekend>
 </div>
 </template>
 
@@ -24,13 +25,30 @@ export default {
     HomeRecommend,
     HomeWeekend
   },
+  data () {
+    return {
+      city: '城市',
+      swiperList: [],
+      iconList: [],
+      recommendList: [],
+      weekendList: []
+    }
+  },
   methods: {
     getHomeInfo () {
       axios.get('/api/index.json')
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
-      console.log(res)
+      res = res.data
+      if (res.ret && res.data) {
+        const data = res.data
+        this.city = data.city
+        this.swiperList = data.swiperList
+        this.iconList = data.iconList
+        this.recommendList = data.recommendList
+        this.weekendList = data.weekendList
+      }
     }
   },
   mounted () {

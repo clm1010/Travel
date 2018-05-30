@@ -1,6 +1,6 @@
 <template>
 <div class="icons">
-  <swiper :options="swiperOption">
+  <swiper :options="swiperOption" v-if="showIconsSwiper">
     <swiper-slide  v-for="(page, index) of pages" :key="index">
       <div class="icon" v-for="item of page" :key="item.id">
         <div class="icon-img">
@@ -17,54 +17,16 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true,
         autoplay: 5000
-      },
-      iconList: [{
-        id: '0001',
-        imgUrl: require('@/assets/img/icon-01.png'),
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: require('@/assets/img/icon-02.png'),
-        desc: '必游榜单'
-      }, {
-        id: '0003',
-        imgUrl: require('@/assets/img/icon-03.png'),
-        desc: '踏青赏花'
-      }, {
-        id: '0004',
-        imgUrl: require('@/assets/img/icon-04.png'),
-        desc: '一日游'
-      }, {
-        id: '0005',
-        imgUrl: require('@/assets/img/icon-05.png'),
-        desc: '动植物园'
-      }, {
-        id: '0006',
-        imgUrl: require('@/assets/img/icon-06.png'),
-        desc: '故宫'
-      }, {
-        id: '0007',
-        imgUrl: require('@/assets/img/icon-07.png'),
-        desc: '古北水镇'
-      }, {
-        id: '0008',
-        imgUrl: require('@/assets/img/icon-08.png'),
-        desc: 'Q+精选'
-      }, {
-        id: '0009',
-        imgUrl: require('@/assets/img/icon-09.png'),
-        desc: '演出'
-      }, {
-        id: '0010',
-        imgUrl: require('@/assets/img/icon-10.png'),
-        desc: '自然风光'
-      }]
+      }
     }
   },
   computed: {
@@ -78,6 +40,9 @@ export default {
         pages[page].push(item)
       })
       return pages
+    },
+    showIconsSwiper () {
+      return this.iconList.length
     }
   }
 }
