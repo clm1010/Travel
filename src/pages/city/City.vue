@@ -2,8 +2,15 @@
 <div>
   <city-header></city-header>
   <city-search></city-search>
-  <city-list :cities = "cities" :hotCities = "hotCities"></city-list>
-  <city-alphabet :cities="cities"></city-alphabet>
+  <city-list
+    :cities = "cities"
+    :hotCities = "hotCities"
+    :letter = "letter"
+  ></city-list>
+  <city-alphabet
+    :cities="cities"
+    @alphabetChange="handleLetterChange"
+  ></city-alphabet>
 </div>
 </template>
 
@@ -24,7 +31,8 @@ export default {
   data () {
     return {
       cities: {},
-      hotCities: []
+      hotCities: [],
+      letter: ''
     }
   },
   methods: {
@@ -39,6 +47,10 @@ export default {
         this.cities = data.cities
         this.hotCities = data.hotCities
       }
+    },
+    // 监听alphabetChange事件 letter是Alphabet页面触发的事件值
+    handleLetterChange (letter) {
+      this.letter = letter
     }
   },
   mounted () {
