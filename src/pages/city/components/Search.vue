@@ -13,6 +13,7 @@
         class="search-item border-bottom"
         v-for="item of list"
         :key=item.id
+        @click="handleCityClick(item.name)"
       >
         {{item.name}}
       </li>
@@ -63,6 +64,14 @@ export default {
         }
         this.list = result
       }, 100)
+    }
+  },
+  methods: {
+    handleCityClick (city) {
+      // 调用dispatch触发Actions
+      this.$store.dispatch('changeCity', city)
+      // 页面跳转
+      this.$router.push('/')
     }
   },
   // 生命周期DOM挂载之后执行

@@ -6,18 +6,18 @@
   <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
   <!-- 点击跳转到city -->
   <router-link to="/city">
-    <div class="header-right">{{this.city}}<span class="iconfont arrow-icon">&#xe64a;</span></div>
+    <div class="header-right">{{this.$store.state.city}}<span class="iconfont arrow-icon">&#xe64a;</span></div>
   </router-link>
 </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader',
+  name: 'HomeHeader'
   // 子组件通过props接受父组件传过来的值
-  props: {
-    city: String
-  }
+  // props: {
+  //   city: String
+  // }
 }
 </script>
 

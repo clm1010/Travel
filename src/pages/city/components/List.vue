@@ -8,7 +8,7 @@
       <div class="button-list">
         <div class="button-wrapper">
           <div class="button">
-            北京
+            {{this.$store.state.city}}
           </div>
         </div>
       </div>
@@ -22,6 +22,7 @@
           class="button-wrapper"
           v-for="item of hotCities"
           :key="item.id"
+          @click="handleCityClick(item.name)"
         >
           <div class="button">
             {{item.name}}
@@ -43,6 +44,7 @@
           class="item border-bottom"
           v-for="innerItem of item"
           :key="innerItem.id"
+          @click="handleCityClick(innerItem.name)"
         >
           {{innerItem.name}}
         </div>
@@ -61,9 +63,13 @@ export default {
     hotCities: Array,
     letter: String
   },
-  // 生命周期DOM挂载之后执行
-  mounted () {
-    this.scroll = new Bscroll(this.$refs.wrapper)
+  methods: {
+    handleCityClick (city) {
+      // 调用dispatch触发Actions
+      this.$store.dispatch('changeCity', city)
+      // 页面跳转
+      this.$router.push('/')
+    }
   },
   // 监听器监听letter是否有变化
   watch: {
@@ -74,6 +80,10 @@ export default {
         this.scroll.scrollToElement(element)
       }
     }
+  },
+  // 生命周期DOM挂载之后执行
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
   }
 }
 </script>

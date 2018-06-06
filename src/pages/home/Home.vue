@@ -1,7 +1,9 @@
 <template>
 <div>
   <!-- 父组件给子组件传值通过属性方式 -->
-  <home-header :city="city"></home-header>
+  <!-- <home-header :city="city"></home-header> -->
+  <!-- 使用vuex不需要ajax获取了 -->
+  <home-header></home-header>
   <home-swiper :swiperList="swiperList"></home-swiper>
   <home-icons :iconList="iconList"></home-icons>
   <home-recommend :recommendList="recommendList"></home-recommend>
@@ -27,7 +29,7 @@ export default {
   },
   data () {
     return {
-      city: '城市',
+      // city: '城市',
       swiperList: [],
       iconList: [],
       recommendList: [],
@@ -43,7 +45,7 @@ export default {
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
-        this.city = data.city
+        // this.city = data.city
         this.swiperList = data.swiperList
         this.iconList = data.iconList
         this.recommendList = data.recommendList
