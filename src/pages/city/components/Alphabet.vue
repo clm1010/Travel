@@ -23,8 +23,15 @@ export default {
   },
   data () {
     return {
-      touchStatus: false
+      touchStatus: false,
+      startY: 0,
+      timer: null
     }
+  },
+  // 生命周期当页面数据被更新的时候，同时页面完成自己渲染后
+  updated () {
+    // A 距离header的高度
+    this.startY = this.$refs['A'][0].offsetTop
   },
   computed: {
     letters () {
@@ -47,16 +54,20 @@ export default {
     // 处理触摸移动事件
     handleTouchMove (event) {
       if (this.touchStatus) {
-        // A 距离header的高度
-        const startY = this.$refs['A'][0].offsetTop
-        // 触摸位置距离顶部位置减去 header 部分的高度
-        const touchY = event.touches[0].clientY - 79
-        // 字母下标
-        const index = Math.floor((touchY - startY) / 20)
-        if (index >= 0 && index < this.letters.length) {
-          // 向上触发事件
-          this.$emit('alphabetChange', this.letters[index])
+        // 节流优化，减缓触摸字母的频率
+        if (this.timer) {
+          clearTimeout(this.timer)
         }
+        this.timer = setTimeout(() => {
+          // 触摸位置距离顶部位置减去 header 部分的高度
+          const touchY = event.touches[0].clientY - 79
+          // 字母下标
+          const index = Math.floor((touchY - this.startY) / 20)
+          if (index >= 0 && index < this.letters.length) {
+            // 向上触发事件
+            this.$emit('alphabetChange', this.letters[index])
+          }
+        }, 16)
       }
     },
     // 处理结束滑动事件
