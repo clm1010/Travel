@@ -12,11 +12,11 @@ export default new Vuex.Store({
   // Actions
   actions: actions,
   // 通过mutations 改变state
-  mutations: mutations,
+  mutations: mutations
 
-  getters: {
-    doubleCity (state) {
-      return state.city + ' ' + state.city
-    }
-  }
+  // getters: {
+  //   doubleCity (state) {
+  //     return state.city + ' ' + state.city
+  //   }
+  // }
 })
