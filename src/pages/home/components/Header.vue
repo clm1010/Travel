@@ -6,18 +6,24 @@
   <div class="header-input"><span class="iconfont">&#xe632;</span>输入城市/景点/游玩主题</div>
   <!-- 点击跳转到city -->
   <router-link to="/city">
-    <div class="header-right">{{this.$store.state.city}}<span class="iconfont arrow-icon">&#xe64a;</span></div>
+    <div class="header-right">{{this.doubleCity}}<span class="iconfont arrow-icon">&#xe64a;</span></div>
   </router-link>
 </div>
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
   // 子组件通过props接受父组件传过来的值
   // props: {
   //   city: String
   // }
+  // mapState把vuex里面的数据映射到computed计算属性里
+  computed: {
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
+  }
 }
 </script>
 
@@ -27,7 +33,7 @@ export default {
     display: flex;
     line-height:$headerHeight;
     background-color: $bgColor;
-    color:#FFFFFF;
+    color:#CCC;
     .header-left
       width: .64rem;
       float: left;
@@ -41,11 +47,12 @@ export default {
       margin-top: .12rem;
       margin-left: .2rem;
       padding-left: .2rem;
-      background-color: #FFFFFF;
+      background-color: #FFF;
       border-radius:.1rem;
-      color: #CCCCCC;
+      color: #CCC;
     .header-right
-      width: 1.24rem;
+      min-width: 1.04rem;
+      padding: 0 .1rem;
       float: right;
       text-align: center;
       color:#FFF;

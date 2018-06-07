@@ -25,6 +25,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
+import { mapActions } from 'vuex'
 export default {
   name: 'CitySearch',
   props: {
@@ -69,10 +70,12 @@ export default {
   methods: {
     handleCityClick (city) {
       // 调用dispatch触发Actions
-      this.$store.dispatch('changeCity', city)
+      // this.$store.dispatch('changeCity', city)
+      this.changeCity(city)
       // 页面跳转
       this.$router.push('/')
-    }
+    },
+    ...mapActions(['changeCity'])
   },
   // 生命周期DOM挂载之后执行
   mounted () {

@@ -8,7 +8,7 @@
       <div class="button-list">
         <div class="button-wrapper">
           <div class="button">
-            {{this.$store.state.city}}
+            {{this.currentCity}}
           </div>
         </div>
       </div>
@@ -56,6 +56,7 @@
 
 <script>
 import Bscroll from 'better-scroll'
+import { mapState, mapActions } from 'vuex'
 export default {
   name: 'CityList',
   props: {
@@ -63,13 +64,20 @@ export default {
     hotCities: Array,
     letter: String
   },
+  computed: {
+    ...mapState({
+      currentCity: 'city'
+    })
+  },
   methods: {
     handleCityClick (city) {
       // 调用dispatch触发Actions
-      this.$store.dispatch('changeCity', city)
+      // this.$store.dispatch('changeCity', city)
+      this.changeCity(city)
       // 页面跳转
       this.$router.push('/')
-    }
+    },
+    ...mapActions(['changeCity'])
   },
   // 监听器监听letter是否有变化
   watch: {
