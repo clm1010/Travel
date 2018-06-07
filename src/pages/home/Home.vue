@@ -61,6 +61,7 @@ export default {
     this.lastCity = this.city
     this.getHomeInfo()
   },
+  // 如果值发生变化才发送ajax请求
   activated () {
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
