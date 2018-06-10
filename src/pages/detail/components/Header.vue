@@ -47,8 +47,14 @@ export default {
       }
     }
   },
+  // 每次页面展示的时候执行
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  // 每次页面隐藏（替换成新的页面）的时候执行
+  // 解绑window scroll事件
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
