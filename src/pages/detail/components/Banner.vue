@@ -1,14 +1,14 @@
 <template>
 <div>
   <div class="banner" @click="handleBannerClick">
-    <img class="banner-img" src="http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_600x330_a80ff353.jpg" />
+    <img class="banner-img" :src="bannerImg" />
     <div class="banner-info">
-      <div class="banner-title">北京欢乐谷(AAAA景区)</div>
-      <div class="banner-number"><span class="iconfont banner-icon">&#xe692;</span>16</div>
+      <div class="banner-title">{{this.sightName}}</div>
+      <div class="banner-number"><span class="iconfont banner-icon">&#xe692;</span>{{this.bannerImgs.length}}</div>
     </div>
   </div>
   <common-gallary
-    :imgs="imgs"
+    :imgs="bannerImgs"
     v-show="showGallary"
     @close="handleGallaryClose"
   ></common-gallary>
@@ -19,10 +19,14 @@
 import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'DetailBanner',
+  props: {
+    sightName: String,
+    bannerImg: String,
+    bannerImgs: Array
+  },
   data () {
     return {
-      showGallary: false,
-      imgs: ['http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_r_800x800_4701d58f.jpg', 'http://img1.qunarzz.com/sight/p0/1501/ab/ab02fceb3fa0a60e.water.jpg_r_800x800_351dd5e6.jpg']
+      showGallary: false
     }
   },
   components: {
