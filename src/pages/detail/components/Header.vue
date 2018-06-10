@@ -26,7 +26,7 @@ export default {
   name: 'DetailHeader',
   data () {
     return {
-      showAbs: true,
+      showAbs: false,
       opacityStyle: {
         opacity: 0
       }
@@ -49,6 +49,10 @@ export default {
   },
   // 每次页面展示的时候执行
   activated () {
+    // 解决隐藏的header不隐藏，重置一下
+    if (!this.showAbs) {
+      this.showAbs = true
+    }
     window.addEventListener('scroll', this.handleScroll)
   },
   // 每次页面隐藏（替换成新的页面）的时候执行
